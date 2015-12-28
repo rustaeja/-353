@@ -1,6 +1,6 @@
 #! /bin/bash
 
-TIMEOUT=20
+TIMEOUT=55
 HOST="localhost:8080"
 URL_PATH=/aprenda/regex/task/0
 export JETTY_HOME="/home/ubuntu/jetty"
@@ -19,3 +19,4 @@ if [ -z "$(curl --connect-timeout $TIMEOUT -m $TIMEOUT -vv http://$HOST$URL_PATH
 else
 	echo "Ok!"
 fi;
+]
